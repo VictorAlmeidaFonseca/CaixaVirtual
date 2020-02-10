@@ -30,13 +30,11 @@ If the browser is showing the message *"The API is working!"* then it is working
 After does the steps above, the API is available. Below there is the api quick documentation. For more provides detailed information about tha API you can check on the Postman service at the folowing link: https://bit.ly/2Seg2sD.
 
 **Movimentacoes**
-
-The representation of the "movimentacoes" object in API.
+>The representation of the "movimentacoes" object in API.
 
 **GET** Movimentacoes list all
-http://localhost:3000/movimentacoes
-
-Description: Show all movimentacoes in API.
+> http://localhost:3000/movimentacoes
+> Description: Show all movimentacoes in API.
 
 
 
