@@ -2,7 +2,7 @@
 
 **Virtual wallet NodeJS API for register incoming and outgoing transactions.**
 
-### Installation
+### #Installation
 
 You can get this project following the steps below:
 
@@ -30,7 +30,7 @@ If the browser is showing the message *"The API is working!"* then it is working
 For this project we use MongoDB Atlas. MongoDB Atlas automates infrastructure would storing the all database on cloud. If you want, you can check or change the *db.connection.js* file at *src/models/*. For more infomation about the MongoDB Atlas: https://www.mongodb.com/cloud/atlas.
 
 
-### Next Steps
+### #Next Steps
 
 After does the steps above, the API is available. Below there is the api quick documentation. For more provides detailed information about tha API you can check on the Postman service at the folowing link: https://bit.ly/2Seg2sD.
 
