@@ -15,16 +15,16 @@ require("./src/models/db.connection");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-//Routes(endpoints).
 
+//Routes(endpoints).
 app
-    .route("movimentacoes")
+    .route("/movimentacoes")
     .get(movimentacoesController.listMovimentacao)
     .post(movimentacoesController.createMovimentacao)
 
 app
-    .route("movimentacoes/:movimentacoesid")
-    .get(movimentacoesController.readTask)
+    .route("/movimentacoes/:movimentacaoid")
+    .get(movimentacoesController.readMovimentacao)
     .put(movimentacoesController.updateMovimentacao)
     .delete(movimentacoesController.deleteMovimentacao)
 
