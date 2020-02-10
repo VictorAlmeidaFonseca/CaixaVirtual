@@ -1,24 +1,26 @@
 ## CaixaVirtual
 
-**This is a API for historical dataset on the modern Olympic Games**
+**Virtual Wallet NodeJS API for recording incoming and outgoing transactions.**
 
 ### Installation
 
 You can get this project following the steps below:
 
-- git clone https://github.com/VictorAlmeidaFonseca/CaixaVirtual.git
-- cd CaixaVirtual
-- npm install
-- npm start
-- then access url path **"http://localhost:3000/movimentacoes*** 
+- *git clone https://github.com/VictorAlmeidaFonseca/CaixaVirtual.git*
+- *cd CaixaVirtual*
+- *npm install*
+- *npm start*
+- *then access url path **"http://localhost:3000***
+
+If the browser is showing the message *"The API is working!"* then it is working!
 
 #### Getting by Docker
 
 Also you can get the api by dockerhub following the steps below:
 
-- docker pull fonsecalmeida/vcaixa.dev
-- docker run -p 8787:3000 -d fonsecalmeida/vcaixa.dev
-- then access url path **"http://localhost:8787/movimentacoes*** 
+- *docker pull fonsecalmeida/vcaixa.dev*
+- *docker run -p 8787:3000 -d fonsecalmeida/vcaixa.dev*
+- *then access url path **"http://localhost:8787*** 
 
 
 ### Next Steps
