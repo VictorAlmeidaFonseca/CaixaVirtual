@@ -10,7 +10,7 @@ You can get this project following the steps below:
 - *cd CaixaVirtual*
 - *npm install*
 - *npm start*
-- *then access url path **"http://localhost:3000***
+- *then access url path **http://localhost:3000***
 
 If the browser is showing the message *"The API is working!"* then it is working!
 
@@ -20,7 +20,7 @@ Also you can get the api by dockerhub following the steps below:
 
 - *docker pull fonsecalmeida/vcaixa.dev*
 - *docker run -p 8787:3000 -d fonsecalmeida/vcaixa.dev*
-- *then access url path **"http://localhost:8787*** 
+- *then access url path **http://localhost:8787*** 
 
 If the browser is showing the message *"The API is working!"* then it is working!
 
