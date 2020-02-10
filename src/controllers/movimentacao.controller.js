@@ -1,5 +1,5 @@
 //Importing the model file movimentacao.model
-const movimentacao = require("../models/movimentacao.model")
+const movimentacao = require("../models/movimentacao.models")
 
 
 //Controler to list all movimentacoes.
@@ -14,7 +14,7 @@ exports.listMovimentacao = (req, res) => {
 
 //Controler to create new movimentacoes.
 exports.createMovimentacao = (req, res) => {
-    let newMovimentacao = new movimentacao(req.body);
+    let newMovimentacao = new movimentacao(req.body);   
     newMovimentacao.save((err, movimentacao) => {
       if (err) {
         res.status(500).send(err);
@@ -25,7 +25,7 @@ exports.createMovimentacao = (req, res) => {
   
 
 //Controler to read new movimentacoes.
-exports.readTask = (req, body) => {
+exports.readMovimentacao = (req, res, body) => {
     movimentacao.findById(req.params.movimentacaoid, (err, movimentacao) => {
       if (err) {
         res.status(500).send(err);
@@ -37,9 +37,9 @@ exports.readTask = (req, body) => {
 
 //Controler to update movimentacoes.
 exports.updateMovimentacao = (req, res) => {
-    movimentacao.findOneAndUpdate(
+    movimentacao.findByIdAndUpdate(
       { _id: req.params.movimentacaoid },
-      req.body,
+        req.body,
       { new: true },
       (err, movimentacao) => {
         if (err) {
@@ -52,7 +52,7 @@ exports.updateMovimentacao = (req, res) => {
 
 //Controler to delete movimentacoes.  
 exports.deleteMovimentacao = (req, res) => {
-    movimentacao.remove({ _id: req.params.movimentacaoid }, (err, movimentacao) => {
+    movimentacao.deleteOne({ _id: req.params.movimentacaoid }, (err, movimentacao) => {
       if (err) {
         res.status(404).send(err);
       }

@@ -1,5 +1,6 @@
 // Importing the mongoose
 const mongoose = require("mongoose");
+//const MongoClient = require("mongodb").MongoClient;
 
 // Variable to store the MongoDB Atlas connection
 const uri = "mongodb+srv://cash-register:cash-register@cash-register-rbyoe.mongodb.net/test?retryWrites=true&w=majority";
@@ -32,5 +33,5 @@ mongoose.connect(uri, options).then(
 );
 
 
-// Importing models
-require("./movimentacao.model");
+// Rmodels
+require("./movimentacao.models");
