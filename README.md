@@ -27,13 +27,38 @@ If the browser is showing the message *"The API is working!"* then it is working
 
 ### Next Steps
 
-After does the steps above, you can run "pyhton manage.py runserver" and put in your browser this url: **http://127.0.0.1:8000/**.
-The address takes you to the API endpoint. That showing the url's path. This router is use DefaultRoutet method from Django Rest Framwork as you can see in the picture below:
+After does the steps above, the API is available. Below there is the api quick documentation. For more provides detailed information about tha API you can check on the Postman service at the folowing link: https://bit.ly/2Seg2sD.
 
- ![](https://user-images.githubusercontent.com/36797751/73865793-95f26480-4822-11ea-978d-6c13019684e3.png)
+**Movimentacoes**
 
-### Populate DataBase
+The representation of the "movimentacoes" object in API.
 
-If you want to automatically load initial data for an app you would run **python manager.py populate_base** This command can be modified on the source **olympic_api/management/commands/populate_base.py**
-The source file there is in **OlympicGamesHistory/script**.
+**GET** Movimentacoes list all
+http://localhost:3000/movimentacoes
+
+Description: Show all movimentacoes in API.
+
+
+
+GET Movimentacoes get id
+http://localhost:3000/movimentacoes/movimentacaoid
+
+The request get a movimentacao object by id. You nedd change the "movimentacaoid" in url to current id.
+
+POST Movimentacoes post
+http://localhost:3000/movimentacoes
+
+This request post send data following the model:
+
+saldoTotal : Number, movimentacoes : [ { data: { type:Date, default:Date.now() }, id: String, categoria: { id: String, name: String }, tipo: String, valor: Number, descricao: String } ]
+
+PUT Movimentacoes update
+http://localhost:3000/movimentacoes/movimentacaoid
+
+The request put get the movimentacoes object by id and update any value.
+DEL Movimentacoes delete
+http://localhost:3000/movimentacoes/movimentacaoid
+
+This request delete get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" in url to current id
+
 
