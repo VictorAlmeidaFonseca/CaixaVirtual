@@ -29,7 +29,7 @@ If the browser is showing the message *"The API is working!"* then it is working
 
 After does the steps above, the API is available. Below there is the api quick documentation. For more provides detailed information about tha API you can check on the Postman service at the folowing link: https://bit.ly/2Seg2sD.
 
-####Movimentacoes
+### Movimentacoes
  
  In this documentation movimentacoes is representation of the all transactions in API. E.g: incoming and outgoing.
 
@@ -39,27 +39,40 @@ After does the steps above, the API is available. Below there is the api quick d
  http://localhost:3000/movimentacoes
  ```
 
-
-
-GET Movimentacoes get id
+**GET** (get id)
+>The request get a movimentacao object by id. You nedd change the "movimentacaoid" in url to current id.
+```
 http://localhost:3000/movimentacoes/movimentacaoid
+```
 
-The request get a movimentacao object by id. You nedd change the "movimentacaoid" in url to current id.
 
-POST Movimentacoes post
+**POST** (post movimentacoes)
+> This request post send data to database:
+```
 http://localhost:3000/movimentacoes
+```
 
 This request post send data following the model:
-
-saldoTotal : Number, movimentacoes : [ { data: { type:Date, default:Date.now() }, id: String, categoria: { id: String, name: String }, tipo: String, valor: Number, descricao: String } ]
-
-PUT Movimentacoes update
+```
+saldoTotal : Number, 
+movimentacoes : 
+ [ { data: { type:Date, default:Date.now() },
+   id: String, 
+   categoria: { id: String, name: String }, 
+   tipo: String, 
+   valor: Number, 
+   descricao: String } ]
+```
+**PUT** (update movimentacoe)
+> The request put get the movimentacoes object by id and update any value.
+```
 http://localhost:3000/movimentacoes/movimentacaoid
+```
 
-The request put get the movimentacoes object by id and update any value.
-DEL Movimentacoes delete
+**DEL** (delete movimentacoes)
+> This request delete get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" in url to current id
+```
 http://localhost:3000/movimentacoes/movimentacaoid
-
-This request delete get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" in url to current id
+```
 
 
