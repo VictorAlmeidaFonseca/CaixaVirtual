@@ -45,14 +45,14 @@ After does the steps above, the API is available. Below there is the api quick d
  ```
 
 **GET** (get id)
->The request get a movimentacao object by id. You nedd change the "movimentacaoid" at url to current id.
+>The request "get" a movimentacao object by id. You nedd change the "movimentacaoid" at url to current id.
 ```
 http://localhost:3000/movimentacoes/movimentacaoid
 ```
 
 
 **POST** (post movimentacoes)
-> This request post send data to database:
+> This request "post" send data to database:
 ```
 http://localhost:3000/movimentacoes
 ```
@@ -69,13 +69,13 @@ movimentacoes :
    descricao: String } ]
 ```
 **PUT** (update movimentacoe)
-> The request put get the movimentacoes object by id and update any value.
+> The request "put" get the movimentacoes object by id and update any value.
 ```
 http://localhost:3000/movimentacoes/movimentacaoid
 ```
 
 **DEL** (delete movimentacoes)
-> This request delete get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" at url to current id.
+> This request "delete" get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" at url to current id.
 ```
 http://localhost:3000/movimentacoes/movimentacaoid
 ```
