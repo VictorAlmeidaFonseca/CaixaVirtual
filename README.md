@@ -31,11 +31,13 @@ After does the steps above, the API is available. Below there is the api quick d
 
 **Movimentacoes**
 >The representation of the "movimentacoes" object in API.
-```
-**GET** 
- http://localhost:3000/movimentacoes
+
+**GET** (list all)
 > Description: Show all movimentacoes in API.
 ```
+ http://localhost:3000/movimentacoes
+ ```
+
 
 
 GET Movimentacoes get id
