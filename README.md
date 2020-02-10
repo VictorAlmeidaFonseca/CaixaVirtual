@@ -45,7 +45,7 @@ After does the steps above, the API is available. Below there is the api quick d
  ```
 
 **GET** (get id)
->The request "get" a movimentacao object by id. You nedd change the "movimentacaoid" at url to current id.
+>The request "get" a movimentacao object by id. You need change the "movimentacaoid" at url to current id.
 ```
 http://localhost:3000/movimentacoes/movimentacaoid
 ```
@@ -75,7 +75,7 @@ http://localhost:3000/movimentacoes/movimentacaoid
 ```
 
 **DEL** (delete movimentacoes)
-> This request "delete" get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You nedd change the "movimentacaoid" at url to current id.
+> This request "delete" get movimentacoes object by id and delete. Return the message: "Movimentacao successfully deleted". You need change the "movimentacaoid" at url to current id.
 ```
 http://localhost:3000/movimentacoes/movimentacaoid
 ```
