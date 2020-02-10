@@ -1,6 +1,6 @@
 ## CaixaVirtual
 
-**Virtual Wallet NodeJS API for recording incoming and outgoing transactions.**
+**Virtual wallet NodeJS API for register incoming and outgoing transactions.**
 
 ### Installation
 
@@ -21,6 +21,8 @@ Also you can get the api by dockerhub following the steps below:
 - *docker pull fonsecalmeida/vcaixa.dev*
 - *docker run -p 8787:3000 -d fonsecalmeida/vcaixa.dev*
 - *then access url path **"http://localhost:8787*** 
+
+If the browser is showing the message *"The API is working!"* then it is working!
 
 
 ### Next Steps
