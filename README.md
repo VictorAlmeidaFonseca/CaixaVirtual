@@ -26,7 +26,8 @@ If the browser is showing the message *"The API is working!"* then it is working
 
 #### Database storage
 
-For this project we use MongoDB Atlas. MongoDB Atlas automates infrastructure provisioning database storage in cloud. If you want, you can check or change the *db.connection.js* file at src/models/db.connection.js. For more infomation about the MongoDB Atlas: https://www.mongodb.com/cloud/atlas.
+
+For this project we use MongoDB Atlas. MongoDB Atlas automates infrastructure would storing the all database on cloud. If you want, you can check or change the *db.connection.js* file at src/models/db.connection.js. For more infomation about the MongoDB Atlas: https://www.mongodb.com/cloud/atlas.
 
 
 ### Next Steps
