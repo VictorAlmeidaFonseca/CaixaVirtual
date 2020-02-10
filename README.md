@@ -30,7 +30,7 @@ If the browser is showing the message *"The API is working!"* then it is working
 After does the steps above, the API is available. Below there is the api quick documentation. For more provides detailed information about tha API you can check on the Postman service at the folowing link: https://bit.ly/2Seg2sD.
 
 **Movimentacoes**
->The representation of the "movimentacoes" object in API.
+ In this documentation movimentacoes is representation of the all transactions in API. E.g: incoming and outgoing.
 
 **GET** (list all)
 > Description: Show all movimentacoes in API.
